@@ -336,6 +336,14 @@ article {
     }
 }
 
+.solecito {
+    display: flex;
+    flex-direction: row;
+    flex-flow:row wrap;
+    justify-content: center;
+    align-content: center;
+}
+
 /** error **/ 
 
 .errorpage {
