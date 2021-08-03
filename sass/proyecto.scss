@@ -1,0 +1,355 @@
+.alert {
+    text-align: center;
+    text-transform: uppercase;
+    font-style: italic;
+    background-image: linear-gradient(to right, #E1E3E4, peachpuff);
+}
+
+.navigationImg {
+	display: block;
+	margin-top: 30px;
+  	margin-left: auto;
+  	margin-right: auto;
+  	margin-bottom: 20px;
+  	width: 10%;
+}
+
+.navMenuFlex {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    border: 2px solid lightgrey;
+    background-color: #F1E3E3;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+
+    li {
+        list-style-type: none;
+        margin: 0px;
+        flex-basis: 200px;
+    }
+}
+
+ul, ol {
+list-style: none;
+}
+
+
+.navigationMenu{
+li{
+    float: left;
+    list-style-type: none;
+    a{
+            color: #7D6B7D;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-size: 15px;
+            padding: 10px 20px;
+            display: block;
+        &:hover{
+            background-color: rgb(228, 208, 208);
+            text-decoration: underline;
+        }
+    }
+
+    ul{
+    display: none;
+    position: absolute;
+    min-width: 140px;
+    }
+    &:hover {
+        background-color:rgb(233, 196, 163);
+        text-decoration: underline;
+        ul{
+            display: block;
+            list-style-type: none;
+            background-color: white;
+            border: 2px ridge peachpuff;
+            a{
+                &:hover{
+                    background-color: rgb(255, 241, 230);
+                }
+            }
+        }
+        
+    }
+}
+}
+
+.feliz {
+    .col {
+        padding: 0;
+    }
+}
+
+.card {
+    margin-left: 10px;
+    margin-top: 50px;
+    width: 25rem;
+    .centrar {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+}
+  
+.card-img-top {
+    width: 350px;
+    height: 500px;
+}
+
+.card-title {
+    text-align: left;
+	margin-top: 0.5rem;
+    margin-bottom: 1.0rem;
+    padding-bottom: 20px;
+}
+
+.botoncompra {
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #F1E3E3;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    &:hover {
+        color: black;
+        background-color: #fff;
+        border: 1px solid darkgrey;
+    }
+}
+
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+	color: #7D6B7D;
+	text-align: center;
+	text-transform: uppercase;
+  margin-top: 2.0em;
+  margin-bottom: 3.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.titulos {
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+.main {
+	background-color: rgb(241, 227, 227);
+	display: flex;
+	font-style: italic;
+	padding: 10px 20px 10px 20px;
+	.mainSection {
+		font-size: 20px;
+		padding-right: 30px;
+		width: 60%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.mainAside {
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+aside {
+    text-align: center;
+    .Inicio {
+        color: #7D6B7D;
+        font-weight: 500;
+    }
+}
+
+.nuevosPdt {
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 50px;
+	text-align: center;
+    .newcollections {
+        margin: 6px 60px 6px 60px;
+        width: 290px;
+        height: 380px;
+        transition: transform .5s;
+        transition-timing-function: ease-in-out;
+        &:hover {
+            transform: scale(1.2,1.3); /* desafio frameworks css + b */
+        }
+    }
+}
+
+.footerT {
+	margin-top: 80px;
+	padding-top: 25px;
+	background-color: #E1E3E4;
+	height: 200px;
+	clear: both;
+	background-image: linear-gradient(to right, #E1E3E4, peachpuff); /* configuracion GRADIENT */
+    .newsletter {
+        text-align: center;
+        font-size: 20px;
+        font-style: inherit;
+        color: #7D6B7D;
+    }
+}
+
+form {
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom:  20px;
+	.newsletter1 {
+		padding: 1px 30px;
+		text-align: center;
+	}
+}
+
+/** PAGINA PRODUCTOS **/ 
+
+.grid1{
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+    background-color: rgb(241, 227, 227);
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+figcaption {
+	text-align: center;
+	color: #7D6B7D;
+	font-size: 20px;
+}
+
+.nuevosPdt {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	text-align: center;
+    .iprd {
+        margin: 5px 20px 5px;
+        border-radius: 10px;
+        height: 570px;
+        width: 440px;
+    }
+}
+
+.favorito {
+    padding-top: 150px;
+    padding-right: 20px;
+}
+
+.description {
+	text-align: center;
+	color: #7D6B7D;
+	font-size: 20px;
+	padding: 10px;
+    font-style: italic;
+}
+
+.description1 {
+	margin-bottom: 50px;
+	text-align: center;
+	color: #7D6B7D;
+	font-size: 20px;
+	padding: 10px;
+    font-style: italic;
+}
+
+/** CONFIGURACION PAG NOSOTROS **/ 
+
+table {
+	margin-top: 30px;
+	margin-left: 5px;
+	margin-right: 5px;
+	text-align: center;
+	border: 3px ridge #E1E3E4;
+	thead {
+		background-color:peachpuff;
+		color: #7D6B7D;
+		text-transform: uppercase;
+		.tabla2 {
+			padding: 10px 20px;
+		}
+	}
+}
+
+td {
+	padding: 7px 10px 7px 10px;
+}
+
+.border1 {
+	border: 1px ridge darkgrey;
+}
+
+/** ENVIOS Y DEV **/ 
+
+.description1 {
+	@extend .description;
+	margin-top: 25px;
+}
+
+.flexbox-D {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+article {
+	
+	padding: 10px;
+	margin: 10px 20px 10px 20px;
+	text-align: left;
+	border: 1px solid lightgrey;
+	ol { 
+		margin-right: 20px;
+		margin-left: 20px;
+		color: #000;
+		font-size: 18px;
+		list-style-type: disc;
+		li {
+			padding-top: 5px;
+		}
+	}
+}
+
+.fondo {
+	background-color: white;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/** CONTACTO **/
+
+.formulario {
+	color: #7D6B7D;
+	font-weight: 700;
+	border-radius: 10px;
+	margin-right: 490px;
+	margin-left: 490px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+    .btnform {
+        background-color: peachpuff;
+        color: #7D6B7D;
+        font-weight: 600;
+    }
+}
+
+/** error **/ 
+
+.errorpage {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+$blue: lightgrey;
+
+
+
+
+
+
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
