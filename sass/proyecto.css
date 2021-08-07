@@ -12,7 +12,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
-  width: 10%;
+  width: 15%;
 }
 
 /*.feliz {
@@ -74,37 +74,6 @@ h6, .h6, .h6, h5, .h5, .h5, h4, .h4, .h4, h3, .h3, .h3, h2, .h2, .h2, h1, .h1, .
   margin-bottom: 50px;
 }
 
-/*
-.main {
-	background-color: rgb(241, 227, 227);
-	display: flex;
-	font-style: italic;
-	padding: 10px 20px 10px 20px;
-	.mainSection {
-		font-size: 20px;
-		padding-right: 30px;
-		width: 60%;
-		display: flex;
-	}
-	.mainAside {
-		width: 50%;
-		display: flex;
-		flex-direction: column;
-	}
-}
-
-
-
-aside {
-    text-align: center;
-    .Inicio {
-        font-size: 200px;
-        color: #7D6B7D;
-        font-weight: 500;
-    }
-}
-
-*/
 .nuevosPdt {
   margin-left: 5px;
   margin-right: 5px;
@@ -179,7 +148,6 @@ figcaption {
 }
 
 .nuevosPdt {
-  margin-top: 30px;
   margin-bottom: 30px;
   text-align: center;
 }
