@@ -1,96 +1,117 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!--estilos de bootstrap + estilos propios-->
-
-    <link rel="stylesheet" href="./sass/proyecto.css">
-
-    <title>envios y devoluciones/Emma's Jewelry Store</title>
     <!-- desafio seo -->
-  <meta name="description" content="Joyeria Boho chic para las amantes de la moda.">  
-  <meta name="keywords" content="Boho, Jewelry, Joyas, Bohemia, joyas trendy, collares, necklaces, anillos, rings, aretes, earings, brazaletes, bolsos, bags.">
-  <meta name="author" content="Luisa Serna">
-  <meta name="copyright" content="Emma's Jewerlry">
-
-  <!--favicon-->
-
-  <link href="./images/p.png" rel="icon">
-</head>
-<body>
-    <body background="images/corazon.jpg">
+    <meta name="description" content="Joyeria Boho chic para las amantes de la moda.">  
+    <meta name="keywords" content="Boho, Jewelry, Joyas, Bohemia, joyas trendy, collares, necklaces, anillos, rings, aretes, earings, brazaletes, bolsos, bags.">
+    <meta name="author" content="Luisa Serna">
+    <meta name="copyright" content="Emma's Jewerlry">
+    <!--estilos de bootstrap + estilos propios-->
+    <link rel="stylesheet" href="./sass/proyecto.css">
+    <title>envios y devoluciones/Emma's Jewelry Store</title>
+    <!--favicon-->
+    <link href="./images/p.png" rel="icon">
+  </head>
+  
+  <body>
     <header>
-        <div class="alert alert-warning alert-dismissible fade show alerta" role="alert">
+      <!--mensaje descuento-->
+      <div class="alert alert-warning alert-dismissible fade show alerta" role="alert">
         <strong>Quieres un descuento?</strong> Utiliza nuestro codigo JU2021% para activar el 15% off sobre el total de tu compra.
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
+      </div>
+      <!--imagen de navegacion-->
+      <a href="index.html">
+        <img src="./images/p.png" alt="logo" class="navigationImg">
+      </a>
+      <!--menu y submenu bootstrap-->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid luisita">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <a href="index.html">
-          <img src="./images/p.png" alt="logo" class="navigationImg">
-        </a>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
 
-        <div id="header" class="navMenuFlex">
-            <nav>
-              <ul class="navigationMenu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="Productos.html">Productos</a>
-                  <ul>
-                    <li><a href="aretes.html">Aretes</a></li>
-                    <li><a href="collares.html">Collares</a></li>
-                    <li><a href="brazaletes.html">Brazaletes</a></li>
-                    <li><a href="bolsos.html">Bags</a></li>
-                  </ul>
-                </li>
-                <li><a href="Nosotros.html">Nosotros</a></li>
-                        <li><a href="Contacto.html">Contacto</a></li>
-                        <li><a href="Envios-devoluciones.html">Envios y devoluciones</a></li>
-              </ul>
-            </nav>
+            <ul class="navbar-nav justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">INICIO</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="Productos.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">PRODUCTOS</a>
+                
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="Productos.html">FAVORITOS</a></li>
+                  <li><a class="dropdown-item" href="aretes.html">ARETES</a></li>
+                  <li><a class="dropdown-item" href="collares.html">COLLARES</a></li>
+                  <li><a class="dropdown-item" href="brazaletes.html">BRAZALETES</a></li>
+                  <li><a class="dropdown-item" href="bolsos.html">BAGS</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="Nosotros.html">NOSOTROS</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="Envios y devoluciones.html">ENVIOS Y DEVOLUCIONES</a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
     </header>
     
-    <p class="description1 fondo">En esta seccion encontraras toda la informacion necesaria acerca de nuestros envios y como puedes acceder a la devolucion de algun producto. Por favor ten en cuenta que algunos de nuestros accesorios son de venta final, lo que significa que no será posible realizar un cambio o devolución.</p>
+    <!--contenido pagina-->
+    <p class="description1">En esta seccion encontraras toda la informacion necesaria acerca de nuestros envios y como puedes acceder a la devolucion de algun producto. Por favor ten en cuenta que algunos de nuestros accesorios son de venta final, lo que significa que no será posible realizar un cambio o devolución.</p>
     <section class="flexbox-D">
-        <article class="border1 fondo">
-            <h2>Envios</h2>
-            <ol>
-                <li>Si te encuentras en Medellín, tu pedido será entregado en las proximas 48 horas.</li>
-                <li>Si has realizado tu compra desde una ciudad diferente, el pedido será entregado en un maximo de 4 días.</li>
-                <li>Si deseas cambiar la dirección de destino, tienes un lapso de 6 horas desde realizada tu compra para realizar el cambio sin un costo adicional.</li>
-                <li>No pierdas tu voucher de compra, será el comprobante que debes mostrar a la hora de recibir tu domicilio para hacer efectiva la entrega.</li>
-                <li>Pagas contra entrega? Debido a la situacion actual de covid, si deseas pagar en efectivo, deberás tener el precio exacto. Nuestro domiciliario no maneja cambio.</li>
-            </ol>
-        </article>
-        
-        <article class="border1 fondo">
-            <h2>Devoluciones</h2>
-                    <ol>
-                        <li>Ventas finales no tienen cambio, por lo que te recomendamos informarte antes de confirmar tu pedido si tu producto entra dentro de esta categoria.</li>
-                        <li>Si deseas realizar el cambio de algun producto, ten en cuenta que el mismo debe encontrarse dentro del empaque original. Este no puede estar abierto y/o alterado.</li>
-                        <li>Puedes solicitar el servicio de recogida de tu producto el cual tendrá un costo de $00000 o puedes dirijirte a nuestro local con tu factura original de compra para hacer efectiva la devolución.</li>
-                        <li>Te devolveremos el total pagado por el articulo en un bono que podrás redimir con un plazo maximo de 6 meses.</li>
-                        <li>En caso de que tu devolución sea por calidad (defecto de fabrica) te devolveremos tu dinero o podrás escoger otro producto para hacer el cambio.</li>
-                </ol>
-                </article>
-            </section>
+      <article class="border1">
+        <h2>Envios</h2>
+        <ol>
+          <li>Si te encuentras en Medellín, tu pedido será entregado en las proximas 48 horas.</li>
+          <li>Si has realizado tu compra desde una ciudad diferente, el pedido será entregado en un maximo de 4 días.</li>
+          <li>Si deseas cambiar la dirección de destino, tienes un lapso de 6 horas desde realizada tu compra para realizar el cambio sin un costo adicional.</li>
+          <li>No pierdas tu voucher de compra, será el comprobante que debes mostrar a la hora de recibir tu domicilio para hacer efectiva la entrega.</li>
+          <li>Pagas contra entrega? Debido a la situacion actual de covid, si deseas pagar en efectivo, deberás tener el precio exacto. Nuestro domiciliario no maneja cambio.</li>
+        </ol>
+      </article>
+      
+      <article class="border1">
+        <h2>Devoluciones</h2>
+        <ol>
+          <li>Ventas finales no tienen cambio, por lo que te recomendamos informarte antes de confirmar tu pedido si tu producto entra dentro de esta categoria.</li>
+          <li>Si deseas realizar el cambio de algun producto, ten en cuenta que el mismo debe encontrarse dentro del empaque original. Este no puede estar abierto y/o alterado.</li>
+          <li>Puedes solicitar el servicio de recogida de tu producto el cual tendrá un costo de $00000 o puedes dirijirte a nuestro local con tu factura original de compra para hacer efectiva la devolución.</li>
+          <li>Te devolveremos el total pagado por el articulo en un bono que podrás redimir con un plazo maximo de 6 meses.</li>
+          <li>En caso de que tu devolución sea por calidad (defecto de fabrica) te devolveremos tu dinero o podrás escoger otro producto para hacer el cambio.</li>
+        </ol>
+      </article>
+    </section>
     
     <footer>
-        <section class="footerT">
-            <p class="newsletter">Inscribete a nuestro newsletter.</p>
-            <p class="newsletter">Productos nuevos, ofertas especiales, codigos de descuento y mucho más.</p>
-            <form action="correo electronico">
-                <input type="text" name="Email" placeholder="Email" class="newsletter1">
-                <input type="submit" value="Subscribirme" class="botonnews">
-             </form>
-             <div id="copyright">&copy; 2021, Emma's Jewelry - Todos los derechos reservados.</div>  
-       </section>
+      <section class="footerT">
+        <p class="newsletter">Inscribete a nuestro newsletter.</p>
+        <p class="newsletter">Productos nuevos, ofertas especiales, codigos de descuento y mucho más.</p>
+        <form action="correo electronico">
+          <input type="text" name="Email" placeholder="Email" class="newsletter1">
+          <input type="submit" value="Subscribirme" class="botonnews">
+        </form>
+        <div id="copyright">&copy; 2021, Emma's Jewelry - Todos los derechos reservados.</div>
+      </section>
     </footer>
     
     <!--scripts-->
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    </body>
-    </html>
+  </body>
+</html>
+
+
+
+
+    

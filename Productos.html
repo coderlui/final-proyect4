@@ -1,57 +1,74 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!--estilos de bootstrap + estilos propios-->
-
-    <link rel="stylesheet" href="./sass/proyecto.css">
-
-    <title>productos/Emma's Jewelry Store</title>
     <!-- desafio seo -->
-  <meta name="description" content="Joyeria Boho chic para las amantes de la moda.">  
-  <meta name="keywords" content="Boho, Jewelry, Joyas, Bohemia, joyas trendy, collares, necklaces, anillos, rings, aretes, earings, brazaletes, bolsos, bags.">
-  <meta name="author" content="Luisa Serna">
-  <meta name="copyright" content="Emma's Jewerlry">
-
-  <!--favicon-->
-
-  <link href="./images/p.png" rel="icon">
-</head>
-<body>
+    <meta name="description" content="Joyeria Boho chic para las amantes de la moda.">  
+    <meta name="keywords" content="Boho, Jewelry, Joyas, Bohemia, joyas trendy, collares, necklaces, anillos, rings, aretes, earings, brazaletes, bolsos, bags.">
+    <meta name="author" content="Luisa Serna">
+    <meta name="copyright" content="Emma's Jewerlry">
+    <!--estilos de bootstrap + estilos propios-->
+    <link rel="stylesheet" href="./sass/proyecto.css">
+    <title>productos/Emma's Jewelry Store</title>
+    <!--favicon-->
+    <link href="./images/p.png" rel="icon">
+  </head>
+  
+  <body>
     <header>
-        <div class="alert alert-warning alert-dismissible fade show alerta" role="alert">
+      <!--mensaje descuento-->
+      <div class="alert alert-warning alert-dismissible fade show alerta" role="alert">
         <strong>Quieres un descuento?</strong> Utiliza nuestro codigo JU2021% para activar el 15% off sobre el total de tu compra.
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
+      </div>
+      <!--imagen de navegacion-->
+      <a href="index.html">
+        <img src="./images/p.png" alt="logo" class="navigationImg">
+      </a>
+      <!--menu y submenu bootstrap-->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid luisita">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <a href="index.html">
-             <img src="./images/p.png" alt="logo" class="navigationImg">
-        </a>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
 
-        <div id="header" class="navMenuFlex">
-            <nav>
-              <ul class="navigationMenu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="Productos.html">Productos</a>
-                  <ul>
-                    <li><a href="aretes.html">Aretes</a></li>
-                    <li><a href="collares.html">Collares</a></li>
-                    <li><a href="brazaletes.html">Brazaletes</a></li>
-                    <li><a href="bolsos.html">Bags</a></li>
-                  </ul>
-                </li>
-                <li><a href="Nosotros.html">Nosotros</a></li>
-                        <li><a href="Contacto.html">Contacto</a></li>
-                        <li><a href="Envios y devoluciones.html">Envios y devoluciones</a></li>
-              </ul>
-            </nav>
+            <ul class="navbar-nav justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">INICIO</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="Productos.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">PRODUCTOS</a>
+                
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="Productos.html">FAVORITOS</a></li>
+                  <li><a class="dropdown-item" href="aretes.html">ARETES</a></li>
+                  <li><a class="dropdown-item" href="collares.html">COLLARES</a></li>
+                  <li><a class="dropdown-item" href="brazaletes.html">BRAZALETES</a></li>
+                  <li><a class="dropdown-item" href="bolsos.html">BAGS</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="Nosotros.html">NOSOTROS</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="Envios y devoluciones.html">ENVIOS Y DEVOLUCIONES</a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
     </header>
 
-    <h2>SHELL DECOR NECKLACE</h2>
+
+   <!-- <h2>SHELL DECOR NECKLACE</h2>
     <section class="grid1">
         <div class="nuevosPdt">
           <img src="./images/shellnecklace.jpg" class="iprd">
@@ -63,6 +80,7 @@
             <p class="description1">Elaborado a mano y con todo el amor y buena energia posible, traemos para ustedes esta pieza unica y de la cual creamos muy pocas unidad. QUE ESPERAS? No te pierdas esta oportunidad!!</p>
         </article>
     </section>
+    -->
 
 <h2>OTROS IMPERDIBLES PARA ESTA TEMPORADA</h2>
 <div class="row row-cols-1 row-cols-md-4 g-3">
@@ -70,7 +88,7 @@
       <div class="card h-80">
         <img src="./images/IMG-0804.jpg" class="card-img-top" alt="...">
         <div class="card-body centrar">
-          <h5 class="card-title centrar">8pcs Boho Rings</h5>
+          <h2 class="card-title centrar">8pcs Boho Rings</h2>
           <a href="Productos.html" class="botoncompra">$$$ Add to bag ♥</a>
       </div>
     </div>
@@ -80,7 +98,7 @@
       <div class="card h-80">
         <img src="./images/IMG-0805.jpg" class="card-img-top" alt="...">
         <div class="card-body centrar">
-          <h5 class="card-title centrar">5pcs Boho Rings</h5>
+          <h2 class="card-title centrar">5pcs Boho Rings</h2>
           <a href="Productos.html" class="botoncompra">$$$ Add to bag ♥</a>
         </div>
       </div>
@@ -90,7 +108,7 @@
       <div class="card h-80">
         <img src="./images/IMG-0806.jpg" class="card-img-top" alt="...">
         <div class="card-body centrar">
-          <h5 class="card-title centrar">3pcs Boho Rings</h5>
+          <h2 class="card-title centrar">3pcs Boho Rings</h2>
           <a href="Productos.html" class="botoncompra">$$$ Add to bag ♥</a>
         </div>
       </div>
@@ -100,7 +118,7 @@
       <div class="card h-80">
         <img src="./images/IMG-0386.jpg" class="card-img-top" alt="...">
         <div class="card-body centrar">
-          <h5 class="card-title centrar">13pcs Boho Rings</h5>
+          <h2 class="card-title centrar">13pcs Boho Rings</h2>
           <a href="Productos.html" class="botoncompra">$$$ Add to bag ♥</a>
         </div>
       </div>
@@ -110,7 +128,7 @@
         <div class="card h-80">
           <img src="./images/IMG-0814.jpg" class="card-img-top" alt="...">
           <div class="card-body centrar">
-            <h5 class="card-title centrar">6pcs Decor Bracelet</h5>
+            <h2 class="card-title centrar">6pcs Decor Bracelet</h2>
             <a href="Productos.html" class="botoncompra">$$$ Add to bag ♥</a>
           </div>
         </div>
@@ -120,7 +138,7 @@
         <div class="card h-80">
           <img src="./images/IMG-0815.jpg" class="card-img-top" alt="...">
           <div class="card-body centrar">
-            <h5 class="card-title centrar">4pcs Decor Bracelet</h5>
+            <h2 class="card-title centrar">4pcs Decor Bracelet</h2>
             <a href="Productos.html" class="botoncompra">$$$ Add to bag ♥</a>
           </div>
         </div>
@@ -130,7 +148,7 @@
         <div class="card h-80">
           <img src="./images/IMG-0816.jpg" class="card-img-top" alt="...">
           <div class="card-body centrar">
-            <h5 class="card-title centrar">5pcs Decor Bracelet</h5>
+            <h2 class="card-title centrar">5pcs Decor Bracelet</h2>
             <a href="Productos.html" class="botoncompra">$$$ Add to bag ♥</a>
           </div>
         </div>
@@ -140,7 +158,7 @@
         <div class="card h-80">
           <img src="./images/IMG-0817.jpg" class="card-img-top" alt="...">
           <div class="card-body centrar">
-            <h5 class="card-title centrar">5pcs Decor Bracelet</h5>
+            <h2 class="card-title centrar">5pcs Decor Bracelet</h2>
             <a href="Productos.html" class="botoncompra">$$$ Add to bag ♥</a>
           </div>
         </div>
@@ -150,7 +168,7 @@
         <div class="card h-80">
           <img src="./images/IMG-0818.jpg" class="card-img-top" alt="...">
           <div class="card-body centrar">
-            <h5 class="card-title centrar">4pcs Anklet</h5>
+            <h2 class="card-title centrar">4pcs Anklet</h2>
             <a href="Productos.html" class="botoncompra">$$$ Add to bag ♥</a>
           </div>
         </div>
@@ -160,7 +178,7 @@
         <div class="card h-80">
           <img src="./images/IMG-0819.jpg" class="card-img-top" alt="...">
           <div class="card-body centrar">
-            <h5 class="card-title centrar">3pcs Anklet</h5>
+            <h2 class="card-title centrar">3pcs Anklet</h2>
             <a href="Productos.html" class="botoncompra">$$$ Add to bag ♥</a>
           </div>
         </div>
@@ -170,7 +188,7 @@
         <div class="card h-80">
           <img src="./images/IMG-0820.jpg" class="card-img-top" alt="...">
           <div class="card-body centrar">
-            <h5 class="card-title centrar">4pcs Anklet</h5>
+            <h2 class="card-title centrar">4pcs Anklet</h2>
             <a href="Productos.html" class="botoncompra">$$$ Add to bag ♥</a>
           </div>
         </div>
@@ -180,7 +198,7 @@
         <div class="card h-80">
           <img src="./images/IMG-0821.jpg" class="card-img-top" alt="...">
           <div class="card-body centrar">
-            <h5 class="card-title centrar">5pcs Anklet</h5>
+            <h2 class="card-title centrar">5pcs Anklet</h2>
             <a href="Productos.html" class="botoncompra">$$$ Add to bag ♥</a>
           </div>
         </div>
@@ -198,6 +216,7 @@
          <div id="copyright">&copy; 2021, Emma's Jewelry - Todos los derechos reservados.</div>  
    </section>
 </footer>
+
 
  <!--scripts-->
  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
