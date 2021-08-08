@@ -15,12 +15,11 @@
   	width: 15%;
 }
 
-
 .card {
     margin-top: 50px;
     width: auto;
     .centrar {
-        font-size: 20px;
+        font-size: 17px;
         text-align: center;
         margin-bottom: 15px;
     }
@@ -88,15 +87,14 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 } 
 
 .footerT {
-	margin-top: 80px;
-	padding-top: 25px;
+	padding-top: 5px;
 	background-color: #E1E3E4;
 	height: 100%;
 	clear: both;
 	background-image: linear-gradient(to right, #E1E3E4, peachpuff); /* configuracion GRADIENT */
     .newsletter {
         text-align: center;
-        font-size: 20px;
+        font-size: 15px;
         font-style: inherit;
         color: #7D6B7D;
     }
@@ -104,7 +102,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 
 
 .footerf {
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
 
 form {
@@ -288,7 +286,7 @@ $blue: lightgrey;
 
 .pato {
     color: #7d6b7d;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .socialmedia {
@@ -296,9 +294,13 @@ $blue: lightgrey;
 }
 
 .icon {
-    width: 70px;
-    padding-bottom: 30px;
+    width: 40px;
 }
+
+.fin {
+    margin-bottom: 30px;
+}
+
 .vacuna {
     margin-top:50px;
     padding-top: 75px;
@@ -312,8 +314,9 @@ $blue: lightgrey;
 }
 
 .inicio {
-    font-size: 27px;
-    text-align: center;
+    font-size: 25px;
+    color: #7d6b7d;
+    text-align: justify;
     font-style: italic;
 }
 
