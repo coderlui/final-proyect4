@@ -131,16 +131,28 @@ figcaption {
 	font-size: 20px;
 }
 
-.nuevosPdt {
-	margin-bottom: 30px;
-	text-align: center;
-    .iprd {
-        margin: 5px 20px 5px;
-        border-radius: 10px;
-        height: 570px;
-        width: 440px;
-    }
+.iprd {
+    width: 80%;
+    height: 100%;
 }
+
+.gridm {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.gridn {
+    padding-top: 25px;
+}
+
+.borde {
+ border: 2px ridge peachpuff;
+ padding-top: 10px;
+ padding-bottom: 10px;
+}
+
+
 
 .favorito {
     padding-top: 150px;
@@ -327,14 +339,6 @@ $blue: lightgrey;
 
 .ncc {
     padding-bottom: 40px;
-}
-
-.formularioContacto {
-    margin-top: 100px;
-}
-
-.bk {
-    background-color: #F1E3E3;
 }
 
 .nav-link {
