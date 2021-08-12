@@ -162,8 +162,8 @@ form .newsletter1 {
 /* inicio de configuracion pagina productos */
 .borde {
   border: 2px ridge peachpuff;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .borde .iprd {
