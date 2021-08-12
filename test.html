@@ -1,336 +1,368 @@
-<!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Joyeria Boho chic para las amantes de la moda.">  
-    <meta name="keywords" content="Boho, Jewelry, Joyas, Bohemia, joyas trendy, collares, necklaces, anillos, rings, aretes, earings, brazaletes, bolsos, bags.">
-    <meta name="author" content="Luisa Serna">
-    <meta name="copyright" content="Emma's Jewerlry">
-    <!--estilos de bootstrap + estilos propios-->
-    <link rel="stylesheet" href="./sass/proyecto.css">
-    <title>inicio/Emma's Jewelry Store</title>
-    <!--favicon-->
-    <link href="./images/p.png" rel="icon">
-  </head>
-<body>
- 
-    <header>
-      <!--mensaje descuento-->
-        <div class="alert alert-warning alert-dismissible fade show alerta" role="alert">
-          <strong>Quieres un descuento?</strong> Utiliza nuestro codigo JU2021% para activar el 15% off sobre el total de tu compra.
-          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
-      <!--mensaje descuento-->
-      <a href="index.html">
-        <img src="./images/p.png" alt="logo" class="navigationImg">
-      </a>
-      <!--barra de navegacion-->
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid luisita">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
-              <ul class="navbar-nav justify-content-center">
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="index.html">INICIO</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="Productos.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    PRODUCTOS
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <li><a class="dropdown-item" href="Productos.html">FAVORITOS</a></li>
-                    <li><a class="dropdown-item" href="aretes.html">ARETES</a></li>
-                    <li><a class="dropdown-item" href="collares.html">COLLARES</a></li>
-                    <li><a class="dropdown-item" href="brazaletes.html">BRAZALETES</a></li>
-                    <li><a class="dropdown-item" href="bolsos.html">BAGS</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="Nosotros.html">NOSOTROS</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="Envios y devoluciones.html">ENVIOS Y DEVOLUCIONES</a>
-                </li>
-               
-              </ul>
-            </div>
-          </div>
-      </nav>
-    </header>
-        
-        <!--
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bag-check-fill" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zm-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
-                </svg>
-                <i class="bi bi-bag-check-fill"></i>
-
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-box" viewBox="0 0 16 16">
-                  <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5 8 5.961 14.154 3.5 8.186 1.113zM15 4.239l-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z"/>
-                </svg>
-                <i class="bi bi-box"></i>
-
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-                  <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
-                </svg>
-                <i class="bi bi-cart2"></i>
-
-
-
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-                  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-                </svg>
-                <i class="bi bi-facebook"></i>
-
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-                  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
-                </svg>
-                <i class="bi bi-instagram"></i>
-
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-credit-card" viewBox="0 0 16 16">
-                  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z"/>
-                  <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z"/>
-                </svg>
-                <i class="bi bi-credit-card"></i>
-
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                  <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-                </svg>
-                <i class="bi bi-person-circle"></i>
-
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
-                  <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
-                </svg>
-                <i class="bi bi-twitter"></i>
-
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
-                  <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
-                </svg> <i class="bi bi-whatsapp"></i> 
-                -->
-
-
-    
-   
-       <section class="container-fluid">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./images/logo1.jpg" class="d-block w-100" alt="...">
-                </div>
-
-                <div class="carousel-item">
-                    <img src="./images/logo1.jpg" class="d-block w-100" alt="...">
-                </div>
-
-
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-            </button>
-
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </section>
-
-    <h1 class="titulos">Productos mas vendidos</h1>
-    <div class="card-group">
-      <div class="card container">
-        <img src="./images/img_9389.jpg" class="card-img-top" alt="...">
-        <div class="card-body centrar">
-          <h5 class="card-title centrar">Sun Necklace</h5>
-          <a href="Productos.html" class="botoncompra">$$$ Add to bag ♥</a>   
-        </div>
-      </div>
-      <div class="card container">
-        <img src="./images/IMG-0380.jpg" class="card-img-top" alt="...">
-        <div class="card-body centrar">
-          <h5 class="card-title centrar">Pearl Necklace</h5>
-          <a href="Productos.html" class="botoncompra">$$$ Add to bag ♥</a>   
-        </div>
-      </div>
-      <div class="card container">
-        <img src="./images/IMG-0381.jpg" class="card-img-top" alt="...">
-        <div class="card-body centrar">
-          <h5 class="card-title centrar">Mixed Charm Necklace</h5>
-          <a href="Productos.html" class="botoncompra">$$$ Add to bag ♥</a>   
-        </div>
-      </div>
-      <div class="card container">
-        <img src="./images/IMG-0383.jpg" class="card-img-top" alt="...">
-        <div class="card-body centrar">
-          <h5 class="card-title centrar">3pcs Necklace</h5>
-          <a href="Productos.html" class="botoncompra">$$$ Add to bag ♥</a>   
-        </div>
-      </div>
-    </div>
-
-
-
-    <!-- desafio frameworks + bootstrap-->
-    
-    <div>
-        <h2 class="titulos">Nuestra Marca</h2>
-    </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-8">
-              <img src="./images/pic.jpg" class="historia">
-            </div>
-            <div class="col-sm-4">
-              <p class="inicio">Emma´s Jewelry es una marca creada en el 2021. Desarrollamos este proyecto con mucho amor y dedicación y con el cual nos aventuramos a darle empleo a mujeres de excasos recursos de nuestra ciudad, quienes atravezaban por un momento muy dificil derivado de la pandemia. Nosotras, las creadoras, decidimos sacar este proyecto adelante a pesar de las adversidades y con mucha alegria podemos decir que nuestra tienda está inspirada en la moda boho, que actualmente se encuentra en un punto super trendy a nivel mundial. Que mujer no ama sentirse comoda y lucir unos accesorios hermosos? Emma's Jewelry ofrece accesorios orginiales, con estilo hippie chic y bohemio. Nuestros productos son fabricados a mano en la ciudad de Medellín y todos nuestros materiales son nacionales, ya que amamos apoyar lo local.</p>
-            </div>
-          </div>
-        </div>
-
-
-     
-        
-    <section>
-        <div class="nuevosPdt">
-            <h2 class="titulos ncc">New In Stock</h2>
-            <img src="./images/IMG-9403.jpg" alt="imagen" class="newcollections">
-            <img src="./images/IMG-9407.jpg" alt="imagen" class="newcollections">
-            <img src="./images/IMG-9408.jpg" alt="imagen" class="newcollections">
-        </div>
-    </section>
 
 
 
 
-<!--footer con flexbox-->
+  /* css */
 
-  <footer>
-      <div class="d-flex flex-row  justify-content-evenly bd-highlight footerT border1">
-        <!--<div class="p-2 bd-highlight">
-          <h4 class="footerf">Contacto & FAQ</h4>
-          <ul class="centrar">
-            <li><a class="pato" href="test.html">contact@emma's.js.com</a></li>
-            <li><a class="pato" href="test.html">Politicas de Privacidad</a></li>
-            <li><a class="pato" href="test.html">FAQ</a></li>
-            <li><a class="pato" href="test.html">Envios fuera de la ciudad</a></li>
-          </ul>
-        </div>-->
+  .alert {
+    text-align: center;
+    text-transform: uppercase;
+    font-style: italic;
+    background-image: linear-gradient(to right, #E1E3E4, peachpuff);
+} OK YA LO PUSE 
 
-        <div class="p-2 bd-highlight">
-          <h5>Inscribete a nuestro newsletter.</h5>
-                <p class="newsletter">Productos nuevos, ofertas especiales, codigos de descuento y mucho más.</p>
-                <form action="correo electronico">
-                  <input type="text" name="Email" placeholder="Email" class="newsletter1">
-                  <input type="submit" value="Subscribirme" class="botonnews">
-                </form>
-        </div>
+.navigationImg {
+	display: block;
+	margin-top: 30px;
+  	margin-left: auto;
+  	margin-right: auto;
+  	margin-bottom: 20px;
+  	width: 15%;
+} OK YA LO PUSE 
 
-        
-      </div>
-     <!-- <div class="p-2 bd-highlight">
-        <h5>Follow us</h5>
-                <div class="socialmedia">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-                  </svg>
-                  <i class="bi bi-facebook"></i>
+.card {
+    margin-top: 50px;
+    width: auto;
+    .centrar {
+        font-size: 17px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+} yaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+  
+.card-img-top {
+    width: 200px;
+    height: 450px;
+} YAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
-                  </svg>
-                  <i class="bi bi-instagram"></i>
+.card-title {
+    text-align: left;
+	margin-top: 0.5rem;
+    margin-bottom: 1.0rem;
+    padding-bottom: 20px;
+} YAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
-                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
-                  </svg>
-                  <i class="bi bi-twitter"></i>
-                </div>
-      </div>-->
-      <div class="d-flex flex-row-reverse justify-content-between bd-highlight footerT">
-        <div class="p-2 bd-highlight">
-          <div class="socialmedia">
-            <img src="https://dk0k1i3js6c49.cloudfront.net/iconos-pago/visa.png" class="icon" alt="Visa">
-            <img src="https://dk0k1i3js6c49.cloudfront.net/iconos-pago/american-express.png" class="icon" alt="American Express">
-            <img src="https://dk0k1i3js6c49.cloudfront.net/iconos-pago/mastercard.png" class="icon" alt="MasterCard">
-            <img src="https://dk0k1i3js6c49.cloudfront.net/iconos-pago/visa-debito.png" class="icon" alt="Visa Débito">
-            <img src="https://dk0k1i3js6c49.cloudfront.net/iconos-pago/mastercard-debito.png" class="icon" alt="MasterCard Débito">
-            <img src="https://dk0k1i3js6c49.cloudfront.net/iconos-pago/acordar.png" class="icon" alt="Acordá el pago con nosotros">
-          </div>
-        </div>
-      
-        <div class="p-2 bd-highlight">
-          <div id="copyright" class="newsletter">&copy; 2021, Emma's Jewelry - Todos los derechos reservados.</div> 
-        </div>
-      </div>
-  </footer>
+.botoncompra {
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #F1E3E3;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    &:hover {
+        color: black;
+        background-color: #fff;
+        border: 1px solid darkgrey;
+    }
+}
+
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+	color: #7D6B7D;
+	text-align: center;
+  text-transform: uppercase;
+  margin-top: 2.0rem;
+  margin-bottom: 3.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.titulos {
+    margin-top: 50px;
+    margin-bottom: 50px;
+} YAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
+
+.nuevosPdt {
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+	text-align: center;
+    .newcollections {
+        padding: 10px 20px 10px 20px;
+        width: 340px;
+        height: 370px;
+        transition: transform .5s;
+        transition-timing-function: ease-in-out;
+        &:hover {
+            transform: scale(1.2,1.3); /* desafio frameworks css + b */
+        }
+    }
+} yaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 
 
 
+.footerT {
+	padding-top: 5px;
+	background-color: #E1E3E4;
+	height: 100%;
+	clear: both;
+	background-image: linear-gradient(to right, #E1E3E4, peachpuff); /* configuracion GRADIENT */
+    .newsletter {
+        text-align: center;
+        font-size: 15px;
+        font-style: inherit;
+        color: #7D6B7D;
+    }
+} yaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 
 
-  <footer>
-    <div class="container-fluid footerT">
-      <div class="row">
-        <div class="col">
-          <h5>Contacto & FAQ</h5>
-          <ul class="centrar">
-            <li><a class="pato" href="test.html">contact@emma's.js.com</a></li>
-            <li><a class="pato" href="test.html">Politicas de Privacidad</a></li>
-            <li><a class="pato" href="test.html">FAQ</a></li>
-            <li><a class="pato" href="test.html">Envios fuera de la ciudad</a></li>
-          </ul>
-      </div>
-      
-      <div class="col">
-        <h5>Newsletter</h5>
-        <p class="pato">Productos nuevos, ofertas especiales, codigos de descuento y mucho más.</p>
-        <form action="correo electronico">
-          <input type="text" name="Email" placeholder="Email" class="newsletter1">
-          <input type="submit" value="Subscribirme" class="botonnews">
-        </form>
-      </div>
+.footerf {
+    padding-bottom: 20px;
+}
 
-        <div class="col centrar">
-          <h5>Follow us</h5>
-          <div class="socialmedia">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-            </svg>
-            <i class="bi bi-facebook"></i>
+form {
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom:  20px;
+	.newsletter1 {
+		padding: 1px 30px;
+		text-align: center;
+	}
+} YAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
-            </svg>
-            <i class="bi bi-instagram"></i>
+/** PAGINA PRODUCTOS **/ 
 
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
-              <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
-            </svg>
-            <i class="bi bi-twitter"></i>
-          </div>
-        </div>
+.grid1{
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+    background-color: rgb(241, 227, 227);
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
 
-        <div class="col">
-          <h5>Medios de pago</h5>
-          <div class="socialmedia">
-            <img src="https://dk0k1i3js6c49.cloudfront.net/iconos-pago/visa.png" class="icon" alt="Visa">
-            <img src="https://dk0k1i3js6c49.cloudfront.net/iconos-pago/american-express.png" class="icon" alt="American Express">
-            <img src="https://dk0k1i3js6c49.cloudfront.net/iconos-pago/mastercard.png" class="icon" alt="MasterCard">
+figcaption {
+	text-align: center;
+	color: #7D6B7D;
+	font-size: 20px;
+}
 
-            <div class="socialmedia">
-              <img src="https://dk0k1i3js6c49.cloudfront.net/iconos-pago/visa-debito.png" class="icon" alt="Visa Débito">
-              <img src="https://dk0k1i3js6c49.cloudfront.net/iconos-pago/mastercard-debito.png" class="icon" alt="MasterCard Débito">
-              <img src="https://dk0k1i3js6c49.cloudfront.net/iconos-pago/acordar.png" class="icon" alt="Acordá el pago con nosotros">
-            </div>  
-          </div>
-        </div>
-        <hr>
-        <div id="copyright" class="justify-content-center">&copy; 2021, Emma's Jewelry - Todos los derechos reservados.</div> 
-    </div>
-  </footer>
+.iprd {
+    width: 80%;
+    height: 100%;
+}
+
+.gridm {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.gridn {
+    padding-top: 25px;
+}
+
+.borde {
+ border: 2px ridge peachpuff;
+ padding-top: 10px;
+ padding-bottom: 10px;
+}
+
+
+
+.favorito {
+    padding-top: 150px;
+    padding-right: 20px;
+}
+
+.description {
+	text-align: center;
+	color: #7D6B7D;
+	font-size: 20px;
+	padding: 10px;
+    font-style: italic;
+} yaaaaaaaaaaaaaaaa
+
+.description1 {
+	margin-bottom: 50px;
+	text-align: center;
+	color: #7D6B7D;
+	font-size: 20px;
+	padding: 10px;
+    font-style: italic;
+} YAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
+/** CONFIGURACION PAG NOSOTROS **/ 
+
+table {
+	margin-top: 30px;
+	margin-left: 5px;
+	margin-right: 5px;
+	text-align: center;
+	border: 3px ridge #E1E3E4;
+	thead {
+		background-color:peachpuff;
+		color: #7D6B7D;
+		text-transform: uppercase;
+		.tabla2 {
+			padding: 10px 20px;
+		}
+	}
+}yaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+td {
+	padding: 7px 10px 7px 10px;
+} yaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+.border1 {
+	border: 1px ridge darkgrey;
+} YAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
+/** ENVIOS Y DEV **/ 
+
+.description1 {
+	@extend .description;
+	margin-top: 25px;
+}
+
+.flexbox-D {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+article {
+	
+	padding: 10px;
+	margin: 10px 20px 10px 20px;
+	text-align: left;
+	border: 1px solid lightgrey;
+	ol { 
+		margin-right: 20px;
+		margin-left: 20px;
+		color: #000;
+		font-size: 18px;
+		list-style-type: disc;
+		li {
+			padding-top: 5px;
+		}
+	}
+}
+
+.fondo {
+	background-color: white;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/** CONTACTO **/
+
+.espacioFormulario {
+    display: flex;
+    text-align: center;
+}
+
+.formulario {
+    border: 3px ridge lightgrey;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+	color: #7D6B7D;
+	font-weight: 700;
+	border-radius: 10px;
+    margin-top: 15px;
+	margin-right: 490px;
+	margin-left: 490px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+    .btnform {
+        background-color: peachpuff;
+        color: #7D6B7D;
+        font-weight: 600;
+    }
+}
+
+.contacto {
+    display: flex;
+    flex-direction: row;
+    flex-flow:row wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+/** error **/ 
+
+.errorpage {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+$blue: lightgrey;
+
+/* pruebas */ 
+
+.menuNavegacion {
+    text-align: center;
+    color: #7d6b7d;
+    border: 2px solid lightgrey;
+    background-color: #F1E3E3;
+    margin-bottom: 50px;
+} OK YA LO PUSE 
+
+.pato {
+    color: #7d6b7d;
+    font-size: 15px;
+}
+
+.socialmedia {
+    text-align: center;
+}
+
+.icon {
+    width: 40px;
+} YAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
+.fin {
+    margin-bottom: 30px;
+}
+
+.vacuna {
+    margin-top:50px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    background-color: peachpuff;
+    justify-content: center;
+}
+
+.bi {
+    margin-left: 10px;
+}
+
+.inicio {
+    font-size: 25px;
+    color: #7d6b7d;
+    text-align: justify;
+    font-style: italic;
+} yaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+.historia {
+    width: 100%;
+    height: 100%;
+} yaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+.ncc {
+    padding-bottom: 40px;
+}
+
+.nav-link {
+    font-size: 18px;
+    &:hover{
+        background-color: rgb(228, 208, 208);
+        text-decoration: underline;
+    }
+}
+
+.nav-item {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.icon {
+    display: inline-block;
+}
 
 
 
