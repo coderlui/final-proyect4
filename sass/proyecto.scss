@@ -237,6 +237,14 @@ td {
     }
 }
 
+.formulario--Espacio {
+    display: block;
+    padding-bottom: 15px;
+}
+
+.formulario--Espacio1 {
+    margin-top: 15px;
+}
 /* inicio configuracion pag env y dev */ 
 
 .flexbox-D {
@@ -266,21 +274,5 @@ article {
 }
 
 $blue: rgb(228, 218, 218);
-
-
-
-
-
-
-
-
-
-
-
-/* estilos viejos de los cuales debo eliminar lo que no necesito */ 
-
-
-
-
 
 @import "../node_modules/bootstrap/scss/bootstrap";

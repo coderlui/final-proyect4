@@ -253,6 +253,15 @@ td {
   font-weight: 600;
 }
 
+.formulario--Espacio {
+  display: block;
+  padding-bottom: 15px;
+}
+
+.formulario--Espacio1 {
+  margin-top: 15px;
+}
+
 /* inicio configuracion pag env y dev */
 .flexbox-D {
   display: -webkit-box;
@@ -288,7 +297,6 @@ article ol li {
   padding-top: 5px;
 }
 
-/* estilos viejos de los cuales debo eliminar lo que no necesito */
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
