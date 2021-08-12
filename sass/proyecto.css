@@ -297,6 +297,24 @@ article ol li {
   padding-top: 5px;
 }
 
+.errorpage {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.description2 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.errorBoton {
+  margin-top: 50px;
+}
+
+.foto {
+  margin-top: 100px;
+}
+
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
