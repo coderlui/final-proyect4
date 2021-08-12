@@ -91,6 +91,11 @@ h6, .h6, .h6, h5, .h5, .h5, h4, .h4, .h4, h3, .h3, .h3, h2, .h2, .h2, h1, .h1, .
 }
 
 /* configuacion seccion productos nuevos */
+.row {
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+}
+
 .nuevosPdt {
   margin-bottom: 50px;
   padding-top: 30px;
@@ -177,6 +182,10 @@ form .newsletter1 {
   margin-top: 50px;
   margin-bottom: 40px;
   text-align: center;
+}
+
+.gridn {
+  padding-top: 30px;
 }
 
 .fin {
