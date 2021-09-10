@@ -74,27 +74,28 @@
         
         <div class="contacto">
             <form action="" class="formulario">
-                <label for="Nombre" class="formulario--Espacio">Nombre:</label>
-                <input type="text" name="Nombre">
-                <label for="Apellido" class="formulario--Espacio">Apellido:</label>
-                <input type="text" name="Apellido">
-                <label for="Direccion" class="formulario--Espacio">Dirección:</label>
-                <input type="text" name="Dirección:">
-                <label for="Email" class="formulario--Espacio">Correo:</label>
-                <input type="text" name="Correo:">
+                <label for="Nombre" class="formulario--Espacio"></label>
+                <input id= "nombredatos_Usuario" type="text" name="Nombre" placeholder="Nombre:">
+                <label for="Apellido" class="formulario--Espacio"></label>
+                <input id= "apellidodatos_Usuario" type="text" name="Apellido" placeholder="Apellido:">
+                <label for="Direccion" class="formulario--Espacio"></label>
+                <input id="direcciondatos_Usuario" type="text" name="Dirección:" placeholder="Dirección:"> 
+                <label for="Email" class="formulario--Espacio"></label>
+                <input id="correodatos_Usuario" type="text" name="Correo:" placeholder="Correo:">
                 <label for="gender" class="formulario--Espacio">Genero:</label>
                 <input type="radio" id="Female" name="Respuesta" value="Femenino">
                 <label for="text">Femenino</label><br>
                 <input type="radio" id="Male" name="Respuesta" value="Masculino">
                 <label for="text">Masculino</label><br><br>
                 <label for="Comentarios" class="formulario--Espacio">Comentarios:</label>
-                <textarea name="Comentarios" cols="40" rows="15"></textarea>
+                <textarea name="Comentarios" cols="30" rows="10"></textarea>
                 
                 <h3 class="formulario--Espacio1">Terminos y condiciones</h3><br>
                 <input type="checkbox" id="Acepto" name="Respuesta" value="1">
                 <label for="terminos y condiciones">Acepto que he leido la politica de tratamiento de datos personales</label><br><br>
-                <input type="submit" value="Enviar formulario" class="botoncompra">
-                <input type="reset" value="Limpiar formulario" class="botoncompra">
+
+                <button id = "boton" class="botoncompra" type="reset" onclick="datos_Usuario();"> Enviar Formulario</button>
+                <button id = "boton" class="botoncompra" type="reset"> Limpiar Formulario</button>
             </form>
         </div>
     </div>

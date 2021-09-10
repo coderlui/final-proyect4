@@ -1,3 +1,51 @@
+// desafio DOM 
+
+
+function datos_Usuario() {
+	function Persona(nombre, apellido, direccion, correo){
+		this.nombre = nombre;
+		this.apellido= apellido;
+        this.direccion = direccion;
+        this.correo = correo;
+	}
+	let nombredatos_Usuario = document.getElementById('nombredatos_Usuario').value;
+	let apellidodatos_Usuario = document.getElementById('apellidodatos_Usuario').value;
+    let direcciondatos_Usuario = document.getElementById('direcciondatos_Usuario').value;
+    let correodatos_Usuario = document.getElementById('correodatos_Usuario').value;
+
+
+
+	nuevoUsuario = new Persona (nombredatos_Usuario, apellidodatos_Usuario, direcciondatos_Usuario, correodatos_Usuario);
+	console.log (nuevoUsuario);
+	agregar();
+}
+let baseUsuarios = [];
+function agregar (){
+	baseUsuarios.push(nuevoUsuario);
+	console.log(baseUsuarios);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 let user__name = customer__info ("Por favor ingresa tu nombre");
 let user__lastname = customer__info ("Por favor ingresa tu apellido");
 let user__id = customer__info ("Ingrese su id de usuario");
@@ -40,6 +88,7 @@ console.log (users);
 console.log (users.name_customer());
 
 
+*/
 
 // ejercicios de otros desafios que debo implementar en el proyecto:
 
