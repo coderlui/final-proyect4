@@ -1,21 +1,23 @@
-// desafio DOM 
+// desafio DOM :D 
 
 
 function datos_Usuario() {
-	function Persona(nombre, apellido, direccion, correo){
+	function Persona(nombre, apellido, direccion, correo, comentarios){
 		this.nombre = nombre;
 		this.apellido= apellido;
         this.direccion = direccion;
         this.correo = correo;
+        this.comentarios = comentarios;
 	}
 	let nombredatos_Usuario = document.getElementById('nombredatos_Usuario').value;
 	let apellidodatos_Usuario = document.getElementById('apellidodatos_Usuario').value;
     let direcciondatos_Usuario = document.getElementById('direcciondatos_Usuario').value;
     let correodatos_Usuario = document.getElementById('correodatos_Usuario').value;
+    let comentarios_Usuario = document.getElementById('comentarios_Usuario').value
 
 
 
-	nuevoUsuario = new Persona (nombredatos_Usuario, apellidodatos_Usuario, direcciondatos_Usuario, correodatos_Usuario);
+	nuevoUsuario = new Persona (nombredatos_Usuario, apellidodatos_Usuario, direcciondatos_Usuario, correodatos_Usuario, comentarios_Usuario);
 	console.log (nuevoUsuario);
 	agregar();
 }
@@ -24,6 +26,11 @@ function agregar (){
 	baseUsuarios.push(nuevoUsuario);
 	console.log(baseUsuarios);
 }
+
+
+
+
+
 
 
 
