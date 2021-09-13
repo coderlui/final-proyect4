@@ -1,4 +1,4 @@
-// desafio DOM :D 
+// desafios clase 9
 
 
 function datos_Usuario() {
@@ -15,17 +15,34 @@ function datos_Usuario() {
     let correodatos_Usuario = document.getElementById('correodatos_Usuario').value;
     let comentarios_Usuario = document.getElementById('comentarios_Usuario').value
 
-
-
 	nuevoUsuario = new Persona (nombredatos_Usuario, apellidodatos_Usuario, direcciondatos_Usuario, correodatos_Usuario, comentarios_Usuario);
 	console.log (nuevoUsuario);
 	agregar();
 }
-let baseUsuarios = [];
+
+
 function agregar (){
+    let baseUsuarios = [];
 	baseUsuarios.push(nuevoUsuario);
 	console.log(baseUsuarios);
 }
+
+
+let registroExitoso = document.createElement("p");
+
+registro_Exitoso.innerHTML = "<p>Share the love</p>";
+document.body.appendChild(registroExitoso); 
+
+
+let boton = document.getElementById("boton")
+boton.addEventListener("click", respuesta_Final);
+function respuesta_Final(){
+    datos_Usuario();
+    alert("Gracias por completar el formulario");
+ 
+}
+
+
 
 
 
