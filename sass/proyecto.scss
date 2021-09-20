@@ -232,25 +232,32 @@ td {
 	color: #7D6B7D;
 	font-weight: 500;
     margin-top: 15px;
-    .btnform {
-        background-color: peachpuff;
-        color: #7D6B7D;
-        font-weight: 600;
-    }
 }
-
-
 
 
 .formulario--Espacio {
     display: block;
     padding-bottom: 15px;
     margin-top: 20px;
+ }
+
+
+input:focus {
+    outline: none;
+    color: rgb(151, 0, 131);
 }
 
-.formulario--Espacio1 {
-    margin-top: 15px;
+.validacion {
+    width: 400px;
+    margin: auto;
+    color: #000;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
 }
+
+
+
 /* inicio configuracion pag env y dev */ 
 
 .flexbox-D {

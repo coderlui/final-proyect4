@@ -71,39 +71,42 @@
             <p class="description">Necesitas informacion adicional? Llena el siguiente formulario, dejanos tus datos y nos comunicaremos tan pronto como sea posible.</p>
         </div>
         
-        <!-- DESAFIO CLASE 9 JS-->
+        <!--SEGUNDA ENTREGA PF-->
         <div class="contacto">
-            <form action="" class="formulario">
-                <label for="Nombre" class="formulario--Espacio"></label>
-                <input id= "nombredatos_Usuario" type="text" name="Nombre" placeholder="Nombre:">
-                <label for="Apellido" class="formulario--Espacio"></label>
-                <input id= "apellidodatos_Usuario" type="text" name="Apellido" placeholder="Apellido:">
-                <label for="Direccion" class="formulario--Espacio"></label>
-                <input id="direcciondatos_Usuario" type="text" name="Dirección:" placeholder="Dirección:"> 
-                <label for="Email" class="formulario--Espacio"></label>
-                <input id="correodatos_Usuario" type="text" name="Correo:" placeholder="Correo:">
+            <form action="" id="form" method="GET" class="formulario">
+                <label for="Nombre" class="formulario--Espacio">Nombre:</label>
+                <input id= "nombrealmacenamiento" type="text" name="Nombre" required>
+                <label for="Apellido" class="formulario--Espacio">Apellido:</label>
+                <input id= "apellidoalmacenamiento" type="text" name="Apellido" required>
+                <label for="Direccion" class="formulario--Espacio">Dirección:</label>
+                <input id="domicilioalmanenamiento" type="text" name="Dirección:" required> 
+                <label for="Email" class="formulario--Espacio">Correo Electronico:</label>
+                <input id="correoalmanenamiento" type="email" name="Correo:" required>
                 <label for="gender" class="formulario--Espacio">Genero:</label>
                 <input type="radio" id="Female" name="Respuesta" value="Femenino">
                 <label for="text">Femenino</label><br>
                 <input type="radio" id="Male" name="Respuesta" value="Masculino">
                 <label for="text">Masculino</label><br><br>
-                <label for="Comentarios" class="formulario--Espacio">Comentarios:</label>
-                <textarea id="comentarios_Usuario" name="Comentarios" cols="30" rows="10"></textarea>
+                <label for="Comentarios" required class="formulario--Espacio">Comentarios:</label>
+                <textarea id="comentariosalmacenamiento" name="Comentarios" cols="30" rows="10"></textarea>
                 
                 <h3 class="formulario--Espacio1">Terminos y condiciones</h3><br>
                 <input type="checkbox" id="Acepto" name="Respuesta" value="1">
                 <label for="terminos y condiciones">Acepto que he leido la politica de tratamiento de datos personales</label><br><br>
 
-                <button id = "boton" class="botoncompra" type="reset"> Enviar Formulario</button>
+                <button id = "boton" class="botoncompra" type="submit"> Enviar Formulario</button>
                 <button id = "boton" class="botoncompra" type="reset"> Limpiar Formulario</button>
 
-               <div id="registro_Exitoso"></div>
+                <p class="validacion" id="validacion"></p>
+                <div id= "registro"></div>
+
+               <!-- <div id="registro_Exitoso"></div> -->
 
             </form>
         </div>
     </div>
 
-    <!-- DESAFIO CLASE 9 JS-->
+<!--SEGUNDA ENTREGA PF-->
 
     
     
