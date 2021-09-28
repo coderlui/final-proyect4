@@ -44,7 +44,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
     text-transform: uppercase;
     font-weight: 500;
     line-height: 1.2;
-    margin-bottom: 40px !important;
+    margin-bottom: 20px !important;
 }
 
 .card-img-top {
@@ -64,13 +64,18 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 }
 
 .botoncompra {
- 
     text-transform: uppercase;
     text-decoration: none;
     background-color: #F1E3E3;
     color: black;
     padding: 10px 20px;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    width: 100%;
+    padding: 1rem;
     &:hover {
         color: black;
         background-color: #fff;
@@ -305,5 +310,50 @@ $blue: rgb(228, 218, 218);
 .foto {
     margin-top: 100px;
 }
+
+
+
+
+// intentos de css con Jquery 
+
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+
+
+
+.contenedor{
+    display: block;
+    width: 75rem;
+    margin: 0 auto;
+}
+img {
+    width: 100%;
+}
+#proceso{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @import "../node_modules/bootstrap/scss/bootstrap";
