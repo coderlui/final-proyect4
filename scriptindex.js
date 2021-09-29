@@ -60,7 +60,7 @@ $(document).ready(function () {
             <h2 class="card-title centrar">${producto.precio}</h2>`);
             $(desafio).addClass("producto");
             $("#proceso").append(desafio);
-            $(`[id='${producto.nombre}']`).append('<button class="botoncompra">Add to bag</button>');
+            $(`[id='${producto.nombre}']`).append('<button class="botoncompra" id="luisita">Add to bag</button>');
         };
         $('.botoncompra').click(()=>{agregar_Prod(event.target.parentElement.id, stock, producto_Agregado)});
     }
@@ -70,17 +70,19 @@ $(document).ready(function () {
         if (confirmacion) {
             alert("El valor total a pagar es $" + total);
         } else {
-            alert("El valor total a abonar es $" + total);
+            alert("El valor total a pagar es $" + total);
         };
     };
 
+
     function agregar_Prod(nuevoProducto,stock,producto_Agregado){
+        let cantidad = prompt("Cuantas unidades deseas comprar?")
         let busqueda = stock.find(producto => producto.nombre.toLowerCase().includes(nuevoProducto.toLowerCase()));
-        alert("Haz elejido el producto " + busqueda.nombre);
+        alert("Haz elejido el producto " + busqueda.nombre + " y un total de " + cantidad + " unidades.");
         producto_Agregado = modificar_Carro(busqueda.nombre, busqueda.precio, producto_Agregado);
         let total = 0;
         for (item of producto_Agregado) {
-            total += (item.precio * item.cantidad);
+            total += (item.precio * cantidad);
         }
         if(total) {
             Prod_Agregado(total)
@@ -102,10 +104,24 @@ $(document).ready(function () {
     });
 
 
+    // EFECTOS - ANIMACIONES 
 
 
-        
+    $(".col-sm-4").on("click", ()=>{
+
+        $("#clase13").fadeOut(5000)
+                     .fadeIn(1000);
+
+    });
+
+    setInterval(function () {
+        $('h5',).fadeTo("fast" , 0.8).fadeTo("fast" , 0).delay(60).fadeTo("fast" , 1).delay(1000);
+    }, 50);
+
+
+
 });
+
 
 
 
