@@ -354,6 +354,41 @@ img {
   margin-bottom: 100px;
 }
 
+#verMasProductos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 100px;
+}
+
+.botoncompra1 {
+  border: 2px ridge #000;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 0.8rem;
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 100px;
+}
+
+.imagenesModal {
+  height: 150px;
+  width: 110px;
+  border-radius: 5%;
+}
+
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
