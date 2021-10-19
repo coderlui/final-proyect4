@@ -16,7 +16,7 @@
     <!--favicon-->
     <link href="./images/p.png" rel="icon">
   </head>
-
+  
   <body>
     <header>
       <!--mensaje descuento-->
@@ -44,7 +44,6 @@
 
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="Productos.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">PRODUCTOS</a>
-                
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <li><a class="dropdown-item" href="Productos.html">FAVORITOS</a></li>
                   <li><a class="dropdown-item" href="aretes.html">ARETES</a></li>
@@ -67,9 +66,91 @@
               </li>
             </ul>
           </div>
+
+          <!--3ra entrega del proyecto JS-->
+
+          <!--Adicion del icono de Carrito-->
+          <div class="navbar-nav">
+            <div class="d-flex justify-content-center mt-3">
+                <a type="button" data-toggle="modal" data-target="#cartVisible">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="42" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                    <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                  </svg>
+                </a>  
+                <div id="cartNumbers"> 
+                    <span id="cart-counter">0</span> <!--JS / Cart Counter-->
+                </div>
+            </div>
         </div>
+        <!--Adicion del icono de Carrito-->
       </nav>
-    </header>
+
+      <!--Carrito codigo BS y 3ra entrega del proyecto de JS-->
+
+      <section class="container">
+        <div class="modal fade" id="cartVisible" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header border-bottom-0">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                            Shopping Bag
+                        </h5>
+                        <button type="button" class="close btn btn-outline-danger" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row modal-header text-center">
+                            <div class="col-3">
+                                <h6>Producto</h6>
+                            </div>
+                            <div class="col-3">
+                                <h6>Precio</h6>
+                            </div>
+                            <div class="col-3">
+                                <h6>Cantidad</h6>
+                            </div>
+                            <div class="col-3">
+                                <h6>Eliminar</h6>
+                            </div>
+                        </div> 
+                        <div class="show-cart">  <!-- Adicion de DIV JS-->  
+                        </div>
+                          
+                        <div class="d-flex justify-content-end">
+                            <h5 class="precioTotal">Total: <span class="total-price">0</span> </h5> <!--Precio Total JS-->
+                        </div>   
+                    </div>
+                    <div class="modal-footer border-top-0 d-flex justify-content-between">
+                        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-outline-warning btn-vaciar-carrito">Eliminar Productos</button> <!-- eliminar productos del carro JS -->
+                        <button type="button" class="btn btn-outline-dark btn-finalizar-compra" data-toggle="modal" data-target="#comprarModal"> <!-- Boton de finalizar compra  -->
+                            Checkout
+                        </button> 
+                        <div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel" aria-hidden="true"> 
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="comprarModalLabel">¡Gracias por tu compra!</h5>
+                                        <button type="button" class="close btn btn-outline-danger" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Tu pedido será entregado entre 5 a 7 días habiles</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+</header>
 
     <!--carousel-->
     <section>
@@ -96,66 +177,36 @@
       </div>
     </section>
 
-    <!--seccion productos mas vendidos-->
-    <h1 class="titulos">Productos mas vendidos</h1>
-    <div class="row row-cols-1 row-cols-md-4 g-3" >
-      <div class="col">
-        <div class="card h-80">
-          <img src="./images/img_9389.jpg" class="card-img-top" alt="imagen">
-          <div class="card-body centrar">
-            <h2 class="card-title centrar">shell necklace</h2>
-            <a href="Productos.html" class="botoncompra">$$$ Add to bag ♥</a>
-          </div>
-        </div>
-      </div>
-  
-      <div class="col">
-        <div class="card h-80">
-          <img src="./images/IMG-0380.jpg" class="card-img-top" alt="imagen">
-          <div class="card-body centrar">
-            <h2 class="card-title centrar">Pearl Necklace</h2>
-            <a href="Productos.html" class="botoncompra">$$$ Add to bag ♥</a>
-          </div>
-        </div>
-      </div>
-  
-      <div class="col">
-        <div class="card h-80">
-          <img src="./images/IMG-0381.jpg" class="card-img-top" alt="imagen">
-          <div class="card-body centrar">
-            <h2 class="card-title centrar">Mixed Charm Necklace</h2>
-            <a href="Productos.html" class="botoncompra">$$$ Add to bag ♥</a>
-          </div>
-        </div>
-      </div>
-  
-      <div class="col">
-        <div class="card h-80">
-          <img src="./images/IMG-0383.jpg" class="card-img-top" alt="imagen">
-          <div class="card-body centrar">
-            <h2 class="card-title centrar">3pcs Necklace</h2>
-            <a href="Productos.html" class="botoncompra">$$$ Add to bag ♥</a>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <!-- desafio frameworks + bootstrap-->
-    <h2 class="titulos">Nuestra Marca</h2>
+
+        <!--CREACION DE CARDS CON JQUERY PARA EL DESAFIO CLASE 13 -->
+
+        <section class="container-fluid">
+          <h1 class="mb-5">PRODUCTOS MAS VENDIDOS</h1>
+          <div id="proceso">
+          </div>
+      </section>
+
+       <!-- desafio frameworks + bootstrap-->
+       <h2 class="titulos" >Nuestra Marca</h2>
     
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-8">
-          <p class="inicio">Emma´s Jewelry es una marca creada en el 2020. Desarrollamos este proyecto con mucho amor y dedicación y con el cual nos propusimos a darle empleo a mujeres de excasos recursos de nuestra ciudad, quienes atravezaban por un momento muy dificil derivado de la pandemia.</p>
-          <p class="inicio"> Nosotras, las creadoras, decidimos sacar este proyecto adelante a pesar de las adversidades y con mucha alegria podemos decir que nuestra tienda está inspirada en la moda boho, que actualmente se encuentra en un punto super trendy a nivel mundial. Que mujer no ama sentirse comoda y lucir unos accesorios hermosos?</p>
-          <p class="inicio">Ofrecemos accesorios orginiales, con estilo hippie chic y bohemio. Nuestros productos son fabricados a mano en la ciudad de Medellín y todos nuestros materiales son nacionales, ya que amamos apoyar lo local.</p>
-        </div>
+       <div class="container">
+         <div class="row">
+           <div class="col-sm-8">
+             <p class="inicio">Emma´s Jewelry es una marca creada en el 2020. Desarrollamos este proyecto con mucho amor y dedicación y con el cual nos propusimos a darle empleo a mujeres de excasos recursos de nuestra ciudad, quienes atravezaban por un momento muy dificil derivado de la pandemia.</p>
+             <p class="inicio"> Nosotras, las creadoras, decidimos sacar este proyecto adelante a pesar de las adversidades y con mucha alegria podemos decir que nuestra tienda está inspirada en la moda boho, que actualmente se encuentra en un punto super trendy a nivel mundial. Que mujer no ama sentirse comoda y lucir unos accesorios hermosos?</p>
+             <p class="inicio">Ofrecemos accesorios orginiales, con estilo hippie chic y bohemio. Nuestros productos son fabricados a mano en la ciudad de Medellín y todos nuestros materiales son nacionales, ya que amamos apoyar lo local.</p>
+           </div>
+           
+           <!--fadeIn FadeOut JS-->
+           
+           <div class="col-sm-4"> 
+             <img src="./images/pic.jpg" class="historia" alt="imagenchica" id="clase13">
+            </div>
+          </div>
+        </div> 
 
-        <div class="col-sm-4"> 
-          <img src="./images/pic.jpg" class="historia" alt="imagenchica">
-        </div>
-      </div>
-    </div>
+      <!--fadeIn FadeOut JS-->
     
     <!--seccion de productos nuevos-->
     <section>
@@ -166,6 +217,12 @@
         <img src="./images/IMG-9408.jpg" alt="imagen" class="newcollections">
       </div>
     </section>
+    
+    <!--AJAX EN EL PROYECTO DESAFIO CLASE 14-->
+    <div id="carrito" class="d-grid gap-2">
+      <button class="btn btn-primary botoncompra1" id="producto_car" type="button">VER MAS PRODUCTOS DE LA NUEVA COLECCION</button>
+    <div id= "producto_carro" class="row row-cols-1 row-cols-md-3 g-4"></div>
+        </div>
     
     <!--configuracion footer final-->
     <footer>
@@ -201,7 +258,15 @@
     <!--SCRIPTS BOOTSTRAP Y JS-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scriptindex.js"></script>
+    <script src="cart.js"></script>
     <!--SCRIPT BS Y JS-->
+    
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"crossorigin="anonymous"></script>
 
     <!--SCRIPTS JS & JQUERY ONLINE
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

@@ -5,7 +5,6 @@
 $(document).ready(() => {
 
     $("h1").css("padding-top","50px");
-    $("h1").css("color","#DDC3B6");
     $("h2").css("border", "1px solid #F1E3E3");
     $("h2").css("padding-top","50px");
     $("h2").css("padding-bottom","50px");
