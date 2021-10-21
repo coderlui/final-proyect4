@@ -1,5 +1,11 @@
 //DESAFIO CLASE 14 AJAX 
 
+var moreProducts=document.getElementById("producto_car");
+var disableButton = function () {this.disabled = true;
+
+};
+moreProducts.addEventListener('click', disableButton, false )
+
 
 
 $(document).ready(() => {
@@ -191,9 +197,7 @@ $(document).ready(function () {
              <h2 class="card-title centrar">$${producto.precio}</h2>`);
              $(desafio).addClass("producto");
              $("#proceso").append(desafio);
-             $(`[id='${producto.nombre}']`).append('<button class="botoncompra">Add to bag</button>');
          };
-        $('.botoncompra').click(()=>{agregar_Prod(event.target.parentElement.id, stock, producto_Agregado)});
     }
 
      function Prod_Agregado (total){
@@ -223,15 +227,15 @@ $(document).ready(function () {
      desafioJquery();
 
      $("#intentos").click(function (){
-         alert("Producto: Prueba Pulsera. Valor $23900. Te interesa este producto? Dejanos tus datos en la pagina de contacto y en la seccion de comentarios escribe el nombre del producto y la cantidad que deseas. Tan pronto esté disponible en tienda fisica te lo haremos saber.")
+         alert("Stone Brazalet. Si te interesa reservar este producto, llena los datos en la pagina de formulario y te haremos saber tan pronto esté disponible")
      });
 
      $("#intento1").click(function (){
-        alert("Producto: Prueba Aretes. Valor $21900. Te interesa este producto? Dejanos tus datos en la pagina de contacto y en la seccion de comentarios escribe el nombre del producto y la cantidad que deseas. Tan pronto esté disponible en tienda fisica te lo haremos saber.")
+        alert("Stone Earrings. Si te interesa reservar este producto, llena los datos en la pagina de formulario y te haremos saber tan pronto esté disponible")
      });
 
      $("#intento2").click(function (){
-         alert("Producto: Prueba Bolso. Valor $55900. Si te interesa reservar este producto, llena los datos en la pagina de formulario y te haremos saber tan pronto esté disponible")
+         alert("Rattan Bag. Si te interesa reservar este producto, llena los datos en la pagina de formulario y te haremos saber tan pronto esté disponible")
      });
 
  });

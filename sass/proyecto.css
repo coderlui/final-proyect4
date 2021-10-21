@@ -351,7 +351,7 @@ img {
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 #verMasProductos {
@@ -364,20 +364,6 @@ img {
 }
 
 .botoncompra1 {
-  border: 2px ridge #000;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: black;
-  padding: 10px 20px;
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 0.8rem;
   width: 100%;
   padding: 1rem;
   margin-bottom: 100px;
@@ -387,6 +373,10 @@ img {
   height: 150px;
   width: 110px;
   border-radius: 5%;
+}
+
+.jquery {
+  padding-top: 50px;
 }
 
 /*!

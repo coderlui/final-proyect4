@@ -66,90 +66,7 @@
               </li>
             </ul>
           </div>
-
-          <!--3ra entrega del proyecto JS-->
-
-          <!--Adicion del icono de Carrito-->
-          <div class="navbar-nav">
-            <div class="d-flex justify-content-center mt-3">
-                <a type="button" data-toggle="modal" data-target="#cartVisible">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="42" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-                    <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
-                  </svg>
-                </a>  
-                <div id="cartNumbers"> 
-                    <span id="cart-counter">0</span> <!--JS / Cart Counter-->
-                </div>
-            </div>
-        </div>
-        <!--Adicion del icono de Carrito-->
       </nav>
-
-      <!--Carrito codigo BS y 3ra entrega del proyecto de JS-->
-
-      <section class="container">
-        <div class="modal fade" id="cartVisible" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header border-bottom-0">
-                        <h5 class="modal-title" id="exampleModalLabel">
-                            Shopping Bag
-                        </h5>
-                        <button type="button" class="close btn btn-outline-danger" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row modal-header text-center">
-                            <div class="col-3">
-                                <h6>Producto</h6>
-                            </div>
-                            <div class="col-3">
-                                <h6>Precio</h6>
-                            </div>
-                            <div class="col-3">
-                                <h6>Cantidad</h6>
-                            </div>
-                            <div class="col-3">
-                                <h6>Eliminar</h6>
-                            </div>
-                        </div> 
-                        <div class="show-cart">  <!-- Adicion de DIV JS-->  
-                        </div>
-                          
-                        <div class="d-flex justify-content-end">
-                            <h5 class="precioTotal">Total: <span class="total-price">0</span> </h5> <!--Precio Total JS-->
-                        </div>   
-                    </div>
-                    <div class="modal-footer border-top-0 d-flex justify-content-between">
-                        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Cerrar</button>
-                        <button type="button" class="btn btn-outline-warning btn-vaciar-carrito">Eliminar Productos</button> <!-- eliminar productos del carro JS -->
-                        <button type="button" class="btn btn-outline-dark btn-finalizar-compra" data-toggle="modal" data-target="#comprarModal"> <!-- Boton de finalizar compra  -->
-                            Checkout
-                        </button> 
-                        <div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel" aria-hidden="true"> 
-                            <div class="modal-dialog modal-dialog-centered">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="comprarModalLabel">¡Gracias por tu compra!</h5>
-                                        <button type="button" class="close btn btn-outline-danger" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <p>Tu pedido será entregado entre 5 a 7 días habiles</p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>    
 </header>
 
     <!--carousel-->
@@ -181,7 +98,7 @@
 
         <!--CREACION DE CARDS CON JQUERY PARA EL DESAFIO CLASE 13 -->
 
-        <section class="container-fluid">
+        <section class="container-fluid jquery">
           <h1 class="mb-5">PRODUCTOS MAS VENDIDOS</h1>
           <div id="proceso">
           </div>
@@ -190,7 +107,7 @@
        <!-- desafio frameworks + bootstrap-->
        <h2 class="titulos" >Nuestra Marca</h2>
     
-       <div class="container">
+       <div class="container jquery">
          <div class="row">
            <div class="col-sm-8">
              <p class="inicio">Emma´s Jewelry es una marca creada en el 2020. Desarrollamos este proyecto con mucho amor y dedicación y con el cual nos propusimos a darle empleo a mujeres de excasos recursos de nuestra ciudad, quienes atravezaban por un momento muy dificil derivado de la pandemia.</p>
@@ -211,17 +128,17 @@
     <!--seccion de productos nuevos-->
     <section>
       <div class="nuevosPdt">
-        <h2 class="titulos ncc">New In Stock</h2>
-        <img src="./images/IMG-9403.jpg" alt="imagen" class="newcollections">
-        <img src="./images/IMG-9407.jpg" alt="imagen" class="newcollections">
-        <img src="./images/IMG-9408.jpg" alt="imagen" class="newcollections">
+        <h2 class="titulos ncc" id="otraprueba">New In Stock</h2>
+        <img src="./images/IMG-9403.jpg" id="intentos" alt="imagen" class="newcollections">
+        <img src="./images/IMG-9407.jpg" id="intento1" alt="imagen" class="newcollections">
+        <img src="./images/IMG-9408.jpg" id="intento2" alt="imagen" class="newcollections">
       </div>
     </section>
     
     <!--AJAX EN EL PROYECTO DESAFIO CLASE 14-->
     <div id="carrito" class="d-grid gap-2">
-      <button class="btn btn-primary botoncompra1" id="producto_car" type="button">VER MAS PRODUCTOS DE LA NUEVA COLECCION</button>
-    <div id= "producto_carro" class="row row-cols-1 row-cols-md-3 g-4"></div>
+      <button class="btn btn-primary botoncompra1" id="producto_car" data-dismiss="modal" type="button">VER MAS PRODUCTOS DE LA NUEVA COLECCION</button>
+    <div id= "producto_carro" class="row row-cols-md-6 g-3"></div>
         </div>
     
     <!--configuracion footer final-->
@@ -262,17 +179,6 @@
     <script src="scriptindex.js"></script>
     <script src="cart.js"></script>
     <!--SCRIPT BS Y JS-->
-    
-    <!-- JQUERY -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"crossorigin="anonymous"></script>
 
-    <!--SCRIPTS JS & JQUERY ONLINE
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
-    <script src="milibreria.js"> </script> 
-    <script src="scriptindex.js"></script>
-    SCRIPTS JS & JQUERY ONLINE-->
 </body>
 </html>
