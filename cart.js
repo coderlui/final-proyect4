@@ -1,6 +1,4 @@
 
-
-
 function shoppingCart() {
 
     //Clase boton carro
@@ -34,19 +32,21 @@ function shoppingCart() {
                 let ejsProductsTitleQuantity = ejsProductsTitleRepeat[i].parentElement.parentElement.querySelector( '.shoppingCartPdtQuantity' );
                 ejsProductsTitleQuantity.value++;
                 cartTotalPrice();
-                hhhhh();
-
-
-                function hhhhh () {
-                    let shoppingCart = [];
-                    localStorage.setItem("shoppingCart", JSON.stringify (displayCart));
-                    shoppingCart.push(displayCart);
-                    console.log(shoppingCart);
-                }
+               
                 
                 return;
             }
         };
+
+        hhhhh();
+
+
+        function hhhhh () {
+            let shoppingC = [];
+            localStorage.setItem("shoppingC", JSON.stringify (pdtTitle, prdPrice));
+            shoppingC.push(pdtTitle, prdPrice);
+            console.log(shoppingC);
+        }
         
         
         const shoppingCartDiv = document.createElement( 'div' );
@@ -165,7 +165,6 @@ function shoppingCart() {
 };
     
     shoppingCart();
-    hhhhh();
 
 
         

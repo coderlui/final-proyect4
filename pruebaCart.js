@@ -1,64 +1,124 @@
-
 function cartStorage() {
 
-
-
-    function cartProducts(productName, productPrice){
-
+    function storage_cart (productName, productPrice) {
         this.pName = productName,
         this.pPrice = productPrice
     }
 
-    let cartProductname_Storage = document.getElementById("pruebita").value;
-    let cartProductprice_Storage = document.getElementById("pruebis").value;
+    let pName = document.getElementById("product-name").value;
+    let pPrice = document.getElementById("product-price").value;
 
-    cartInformation = new cartProducts (cartProductname_Storage, cartProductprice_Storage);
-    console.log(cartInformation);
-    addTo_Cart ();
-    cartLocal_Storage();
+    
+    cartStg = new cartStorage (pName, pPrice);
+    console.log(cartStg);
+    addCart ();
+    saveLs ();
 
-    function addTo_Cart (){
-        let productsAdded = [];
-        localStorage.setItem("productsAdded", JSON.stringify (cartInformation));
-        productsAdded.push(cartInformation);
-        console.log(productsAdded);
-    
-    }
-    
-    //Guardar datos en el LocalStorage
-    
-    function  cartLocal_Storage() {
-    
-        if (JSON.parse(localStorage.getItem(cartInformation))){
-            
-            let cartInformation = JSON.parse(localStorage.getItem(cartInformation));
-    
-        } else {
-    
-            console.log("Sin datos")
-    
-        }
-    
-    
-    }
-    
-    let botton = document.getElementsById("pfinal")
-    botton.addEventListener("submit", productsInCart);
-    
-    function productsInCart (e) {
-        e.preventDefault();
+    function addCart () {
 
-        if (cartProductname_Storage && cartProductprice_Storage ){
-            console.log(productsInCart);
-        }
-    
+        let information_Card = [];
+        localStorage.setItem("information_Card" .JSON.stringify(cartStg));
+        information_Card.push(cartStg);
+        console.log(information_Card);
+        
     }
-    
+
+    function saveLs () {
+
+        const addedProducts_Cart = localStorage.getItem(cartStorage);
+        return JSON.parse(addedProducts_Cart) || [];
+
+    }
+
     cartStorage();
+    storage_cart();
 
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function cartStorage() {
+
+
+
+//     function cartProducts(productName, productPrice){
+
+//         this.pName = productName,
+//         this.pPrice = productPrice
+//     }
+
+//     let cartProductname_Storage = document.getElementById("pruebita").value;
+//     let cartProductprice_Storage = document.getElementById("pruebis").value;
+
+//     cartInformation = new cartProducts (cartProductname_Storage, cartProductprice_Storage);
+//     console.log(cartInformation);
+//     addTo_Cart ();
+//     cartLocal_Storage();
+
+//     function addTo_Cart (){
+//         let productsAdded = [];
+//         localStorage.setItem("productsAdded", JSON.stringify (cartInformation));
+//         productsAdded.push(cartInformation);
+//         console.log(productsAdded);
+    
+//     }
+    
+//     //Guardar datos en el LocalStorage
+    
+//     function  cartLocal_Storage() {
+    
+//         if (JSON.parse(localStorage.getItem(cartInformation))){
+            
+//             let cartInformation = JSON.parse(localStorage.getItem(cartInformation));
+    
+//         } else {
+    
+//             console.log("Sin datos")
+    
+//         }
+    
+    
+//     }
+    
+//     let botton = document.getElementsById("pfinal")
+//     botton.addEventListener("submit", productsInCart);
+    
+//     function productsInCart (e) {
+//         e.preventDefault();
+
+//         if (cartProductname_Storage && cartProductprice_Storage ){
+//             console.log(productsInCart);
+//         }
+    
+//     }
+    
+//     cartStorage();
+
+
+
+// }
 
 
 
